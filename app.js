@@ -57,6 +57,7 @@ function limparCampo(){
 }
 
 function reiniciarJogo(){
+    document.getElementById('reiniciar').setAttribute('disabled', 'disabled');
     limparCampo();
     numeroSecreto = gerarNumeroSecreto();
     tentativas = 0;
